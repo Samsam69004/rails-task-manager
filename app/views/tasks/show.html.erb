@@ -1,0 +1,10 @@
+<h2><%= @task.title %></h2>
+<p><%= @task.details %></p>
+<p><%= @task.completed%></p>
+
+
+<%= link_to "retour à la liste", tasks_path %>
+<i class="fa-solid fa-rotate-left"></i>
+
+<%= link_to "modifier une tâche", edit_task_path(@task) %>
+<i class="fa-solid fa-pen-to-square"></i>
